@@ -1,0 +1,811 @@
+<html lang="en">
+<head>
+  <title>Query: Cases (ID: 0)</title>
+  <link href='/ESRI.ArcGIS.SDS.REST.css' rel='stylesheet' type='text/css'>
+  <link rel='SHORTCUT ICON' href='/favicon.ico'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+</head>
+<body>
+<table width="100%" class="userTable">
+<tr>
+<td class="titlecell">ArcGIS REST Services Directory</td>
+</tr>
+</table>
+<table class="navTable" width="100%">
+<tbody>
+<tr valign="top">
+<td class="breadcrumbs">
+<a href="/0MSEUqKaxRlEPj5g/ArcGIS/rest/services">Home</a> > <a href="/0MSEUqKaxRlEPj5g/ArcGIS/rest/services">services</a> > <a href="/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases_US/FeatureServer">ncov_cases_US (FeatureServer)</a> > <a href="/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases_US/FeatureServer/0">Cases</a> > <a href="/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases_US/FeatureServer/0/query"><i>query</i></a> </td>
+<td align="right">
+<a href="http://resources.arcgis.com/en/help/arcgis-rest-api/" target="_blank">API Reference</a></td>
+</tr>
+</tbody>
+</table>
+<div class='restHeader'>
+<h2>Query: Cases (ID: 0)</h2>
+</div>
+<div class='restBody'>
+<form>
+<table class='formTable'>
+<tr>
+<td>
+Where:
+</td>
+<td>
+<input type="text" name="where" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Object IDs:
+</td>
+<td>
+<input type="text" name="objectIds" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Time:
+</td>
+<td>
+<input type="text" name="time" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Input Geometry:</td>
+<td><textarea name='geometry' rows='5' cols='55' >{&quot;xmin&quot;:-11054668.420051308,&quot;ymin&quot;:4317453.204315899,&quot;xmax&quot;:-10463963.065463623,&quot;ymax&quot;:4540037.830682272,&quot;spatialReference&quot;:{&quot;wkid&quot;:102100,&quot;latestWkid&quot;:3857}}</textarea></td>
+</tr>
+<tr>
+<td>Geometry Type:</td>
+<td>
+<select name="geometryType">
+<option value="esriGeometryEnvelope" selected='true'>Envelope</option>
+<option value="esriGeometryPoint">Point</option>
+<option value="esriGeometryPolyline">Polyline</option>
+<option value="esriGeometryPolygon">Polygon</option>
+<option value="esriGeometryMultipoint">Multipoint</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Input Spatial Reference:
+</td>
+<td>
+<input type="text" name="inSR" value="102100" size="75" />
+</td>
+</tr>
+<tr>
+<td>Spatial Relationship:</td>
+<td>
+<select name="spatialRel">
+<option value="esriSpatialRelIntersects" selected='true'>Intersects</option>
+<option value="esriSpatialRelContains">Contains</option>
+<option value="esriSpatialRelCrosses">Crosses</option>
+<option value="esriSpatialRelEnvelopeIntersects">Envelope Intersects</option>
+<option value="esriSpatialRelIndexIntersects">Index Intersects</option>
+<option value="esriSpatialRelOverlaps">Overlaps</option>
+<option value="esriSpatialRelTouches">Touches</option>
+<option value="esriSpatialRelWithin">Within</option>
+<option value="esriSpatialRelDisjoint">Disjoint</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Result Type: </td>
+<td>
+<select name="resultType">
+<option value="none" selected='true'>None</option>
+<option value="standard">Standard</option>
+<option value="tile">Tile</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Distance:
+</td>
+<td>
+<input type="text" name="distance" value="0.0" size="30" />
+</td>
+</tr>
+<tr>
+<td>Units:</td>
+<td>
+<select name="units">
+<option value="esriSRUnit_Meter" selected='true'>Meters</option>
+<option value="esriSRUnit_StatuteMile">Miles</option>
+<option value="esriSRUnit_Foot">Feet</option>
+<option value="esriSRUnit_Kilometer">Kilometers</option>
+<option value="esriSRUnit_NauticalMile">Nautical Miles</option>
+<option value="esriSRUnit_USNauticalMile">US NauticalMiles</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Return Geodetic:</td>
+<td>
+<input type="radio" name="returnGeodetic" value="true"/>True&nbsp;
+<input type="radio" name="returnGeodetic" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>
+Out Fields:
+</td>
+<td>
+<input type="text" name="outFields" value="OBJECTID,Confirmed,Deaths,Last_Update" size="75" />
+</td>
+</tr>
+<tr>
+<td>Return Geometry:</td>
+<td>
+<input type="radio" name="returnGeometry" value="true" checked='true'/>True&nbsp;
+<input type="radio" name="returnGeometry" value="false"/>False</td>
+</tr>
+<tr>
+<td>Feature Encoding:</td>
+<td>
+<select name="featureEncoding">
+<option value="esriDefault" selected="true">esriDefault</option>
+<option value="esriCompressedShapeBuffer">esriCompressedShapeBuffer</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Geometry MultiPatch Option:</td>
+<td>
+<select name="multipatchOption">
+<option value="none" >None</option>
+<option value="xyFootprint" selected="true">xyFootprint</option>
+<option value="stripMaterials" >stripMaterials</option>
+<option value="embedMaterials" >embedMaterials</option>
+<option value="externalizeTextures" >externalizeTextures</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Max Allowable Offset:
+</td>
+<td>
+<input type="text" name="maxAllowableOffset" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Geometry Precision:
+</td>
+<td>
+<input type="text" name="geometryPrecision" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Output Spatial Reference:
+</td>
+<td>
+<input type="text" name="outSR" value="102100" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Datum Transformation:
+</td>
+<td>
+<input type="text" name="datumTransformation" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Apply VCS Projection:</td>
+<td>
+<input type="radio" name="applyVCSProjection" value="true"/>True&nbsp;
+<input type="radio" name="applyVCSProjection" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return IDs Only:</td>
+<td>
+<input type="radio" name="returnIdsOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnIdsOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Unique IDs Only:</td>
+<td>
+<input type="radio" name="returnUniqueIdsOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnUniqueIdsOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Count Only:</td>
+<td>
+<input type="radio" name="returnCountOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnCountOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Extent Only:</td>
+<td>
+<input type="radio" name="returnExtentOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnExtentOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Query Geometry:</td>
+<td>
+<input type="radio" name="returnQueryGeometry" value="true"/>True&nbsp;
+<input type="radio" name="returnQueryGeometry" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Distinct Values:</td>
+<td>
+<input type="radio" name="returnDistinctValues" value="true"/>True&nbsp;
+<input type="radio" name="returnDistinctValues" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Cache Hint</td>
+<td>
+<input type="radio" name="cacheHint" value="true"/>True&nbsp;
+<input type="radio" name="cacheHint" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>
+Order By Fields:
+</td>
+<td>
+<input type="text" name="orderByFields" value="OBJECTID ASC" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Group By Fields (For Statistics):
+</td>
+<td>
+<input type="text" name="groupByFieldsForStatistics" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Output Statistics:</td>
+<td><textarea name='outStatistics' rows='5' cols='55' ></textarea></td>
+</tr>
+<tr>
+<td>
+Having:
+</td>
+<td>
+<input type="text" name="having" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Result Offset:
+</td>
+<td>
+<input type="text" name="resultOffset" value="" size="30" />
+</td>
+</tr>
+<tr>
+<td>
+Result Record Count:
+</td>
+<td>
+<input type="text" name="resultRecordCount" value="" size="30" />
+</td>
+</tr>
+<tr>
+<td>ReturnZ:</td>
+<td>
+<input type="radio" name="returnZ" value="true"/>True&nbsp;
+<input type="radio" name="returnZ" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>ReturnM:</td>
+<td>
+<input type="radio" name="returnM" value="true"/>True&nbsp;
+<input type="radio" name="returnM" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Exceeded Limit Features:</td>
+<td>
+<input type="radio" name="returnExceededLimitFeatures" value="true" checked='true'/>True&nbsp;
+<input type="radio" name="returnExceededLimitFeatures" value="false"/>False</td>
+</tr>
+<tr>
+<td>Quantization Parameters:</td>
+<td><textarea name='quantizationParameters' rows='5' cols='55' ></textarea></td>
+</tr>
+<tr>
+<td>SQL Format:</td>
+<td>
+<select name="sqlFormat">
+<option value="none" >none</option>
+<option value="standard" >standard</option>
+<option value="native" >native</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Format: </td>
+<td>
+<select name="f">
+<option value="html" selected='true'>HTML</option>
+<option value="pjson">JSON</option>
+<option value="pgeojson">GEOJSON</option>
+<option value="pbf">PBF</option>
+</select>
+</td>
+</tr>
+<tr><td colspan='2' align='left'>
+<input type='submit' value='Query (GET)' />
+<input type='submit' onclick='this.form.method = "post";' value='Query (POST)' />
+</td></tr>
+</table>
+<input type="hidden" id="token" name="token" value="" />
+</form>
+<i># results: 39</i><br/><br/>
+<table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>119</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>27769</td></tr>
+<tr><td>Deaths:</td><td>393</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10492619.889283663<br/>
+Y: 4347015.2029840825<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>911</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>368</td></tr>
+<tr><td>Deaths:</td><td>6</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10985519.48013721<br/>
+Y: 4471054.914978927<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>917</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>264</td></tr>
+<tr><td>Deaths:</td><td>6</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10713991.056529151<br/>
+Y: 4460027.7135049244<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>918</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>2377</td></tr>
+<tr><td>Deaths:</td><td>47</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10558240.673035301<br/>
+Y: 4462729.2658844739<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>924</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>159</td></tr>
+<tr><td>Deaths:</td><td>9</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -11050811.917032<br/>
+Y: 4465783.5586012611<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>925</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>3877</td></tr>
+<tr><td>Deaths:</td><td>105</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10779930.852998337<br/>
+Y: 4472307.6532087969<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>926</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>4578</td></tr>
+<tr><td>Deaths:</td><td>73</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10558927.300560074<br/>
+Y: 4509979.2970496938<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>932</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>178</td></tr>
+<tr><td>Deaths:</td><td>5</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10713799.305366674<br/>
+Y: 4502492.088678035<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>946</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>603</td></tr>
+<tr><td>Deaths:</td><td>18</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10917746.316219967<br/>
+Y: 4465868.5776564348<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>955</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>730</td></tr>
+<tr><td>Deaths:</td><td>15</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10924492.604641339<br/>
+Y: 4517326.6390333846<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>956</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>238</td></tr>
+<tr><td>Deaths:</td><td>4</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -11052428.412961293<br/>
+Y: 4517241.2152193272<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>957</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>2656</td></tr>
+<tr><td>Deaths:</td><td>10</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10608580.136027209<br/>
+Y: 4465781.5645233914<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>970</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>3367</td></tr>
+<tr><td>Deaths:</td><td>73</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10658094.576877002<br/>
+Y: 4465954.10885032<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>974</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1741</td></tr>
+<tr><td>Deaths:</td><td>26</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10609493.364394246<br/>
+Y: 4517261.1584270308<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>984</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>809</td></tr>
+<tr><td>Deaths:</td><td>25</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10991599.86204383<br/>
+Y: 4529791.5718677547<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>995</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>54333</td></tr>
+<tr><td>Deaths:</td><td>720</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10849288.83243099<br/>
+Y: 4534919.5195028391<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1004</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>2087</td></tr>
+<tr><td>Deaths:</td><td>50</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10851114.072443025<br/>
+Y: 4472168.81703848<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1012</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>979</td></tr>
+<tr><td>Deaths:</td><td>13</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10658087.894367971<br/>
+Y: 4517365.4627809133<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1522</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1154</td></tr>
+<tr><td>Deaths:</td><td>12</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10502723.474473018<br/>
+Y: 4509322.7909984561<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1565</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>15179</td></tr>
+<tr><td>Deaths:</td><td>226</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10501936.931026088<br/>
+Y: 4467512.8342845971<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1581</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>2283</td></tr>
+<tr><td>Deaths:</td><td>26</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10502846.129627556<br/>
+Y: 4387477.39102829<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1590</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>5167</td></tr>
+<tr><td>Deaths:</td><td>69</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10501815.127465654<br/>
+Y: 4425900.2890125541<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2179</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1150</td></tr>
+<tr><td>Deaths:</td><td>5</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10945387.069348572<br/>
+Y: 4401664.6558191916<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2195</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1916</td></tr>
+<tr><td>Deaths:</td><td>11</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10598635.880198639<br/>
+Y: 4406079.0265042465<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2198</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>4477</td></tr>
+<tr><td>Deaths:</td><td>63</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10553449.566754373<br/>
+Y: 4356940.4385749949<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2201</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>7656</td></tr>
+<tr><td>Deaths:</td><td>82</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10885115.381938653<br/>
+Y: 4352915.7320580119<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2204</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>543</td></tr>
+<tr><td>Deaths:</td><td>7</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10885530.879711648<br/>
+Y: 4410751.1232506707<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2213</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>5134</td></tr>
+<tr><td>Deaths:</td><td>83</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10814044.474954616<br/>
+Y: 4413768.2506321687<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2221</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>948</td></tr>
+<tr><td>Deaths:</td><td>12</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10968829.374486061<br/>
+Y: 4343568.3740815055<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2223</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>4084</td></tr>
+<tr><td>Deaths:</td><td>39</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10601150.046482937<br/>
+Y: 4342227.1894778656<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2229</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1362</td></tr>
+<tr><td>Deaths:</td><td>14</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10823514.690089982<br/>
+Y: 4354353.78161147<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2230</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1119</td></tr>
+<tr><td>Deaths:</td><td>16</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10644260.985019354<br/>
+Y: 4411048.3829526249<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2234</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>4538</td></tr>
+<tr><td>Deaths:</td><td>56</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10730793.380019385<br/>
+Y: 4387504.0571781825<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2235</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>3701</td></tr>
+<tr><td>Deaths:</td><td>48</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10554214.179148419<br/>
+Y: 4416178.2206423925<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2237</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1743</td></tr>
+<tr><td>Deaths:</td><td>33</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10764964.073252209<br/>
+Y: 4344388.1328969141<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2244</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>10072</td></tr>
+<tr><td>Deaths:</td><td>124</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10642596.121884502<br/>
+Y: 4351658.9891312663<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2253</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>4943</td></tr>
+<tr><td>Deaths:</td><td>91</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -10676111.465029882<br/>
+Y: 4399290.0165072<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2255</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>1192</td></tr>
+<tr><td>Deaths:</td><td>11</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -11005682.791749744<br/>
+Y: 4406687.1980735222<br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2256</td></tr>
+<tr class='odd'><td>Confirmed:</td><td>3114</td></tr>
+<tr><td>Deaths:</td><td>20</td></tr>
+<tr class='odd'><td>Last_Update:</td><td>3/16/2021 12:25:52 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Point:</i><br/>
+X: -11049887.740393046<br/>
+Y: 4359005.2874515895<br/>
+</td></tr>
+</table><br/>
+</div>
+</body>
+</html>
